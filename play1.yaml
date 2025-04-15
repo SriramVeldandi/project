@@ -4,12 +4,12 @@
    hosts: server2
    tasks:
      - name: installing apache2 in server1
-       script: install-apache2.sh
+       script: apache2-install.sh
 
  - name: installing nginx
    become: true
    hosts: server3
    tasks:
      - name: installing nginx in server1
-       script: install-nginx.sh
+       script: nginx-install.sh
        
