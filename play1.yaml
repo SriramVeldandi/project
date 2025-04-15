@@ -1,0 +1,15 @@
+---
+ - name: installing apache2
+   become: true
+   hosts: server2
+   tasks:
+     - name: installing apache2 in server1
+       script: install-apache2.sh
+
+ - name: installing nginx
+   become: true
+   hosts: server3
+   tasks:
+     - name: installing nginx in server1
+       script: install-nginx.sh
+       
