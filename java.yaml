@@ -4,5 +4,5 @@
    hosts: localhost, server2, server3
    tasks:
      - name: installing apache2 in server1
-       apt: name=openigk-17-jdk update-cache=yes state=latest
+       apt: name=openjdk-17-jdk update-cache=yes state=latest
        
