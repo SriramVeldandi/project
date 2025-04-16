@@ -1,0 +1,8 @@
+---
+ - name: installing java on all servers
+   become: true
+   hosts: localhost, server2, server3
+   tasks:
+     - name: installing apache2 in server1
+       apt: name=openigk-17-jdk update-cache=yes state=latest
+       
