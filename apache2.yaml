@@ -1,7 +1,7 @@
 ---
  - name: installing apache2
    become: true
-   hosts: server2
+   hosts: web
    tasks:
      - name: installing apache2 in server1
        script: apache2-install.sh
