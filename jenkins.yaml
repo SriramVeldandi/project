@@ -1,0 +1,7 @@
+---
+ - name: installing jenkins on server1(localhost)
+   become: true
+   hosts: localhost
+   tasks:
+     - name: installing jenkins
+       script: jenkins-install.sh
