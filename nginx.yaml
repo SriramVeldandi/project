@@ -1,7 +1,7 @@
 ---
  - name: installing nginx
    become: true
-   hosts: server3
+   hosts: web
    tasks:
      - name: installing nginx in server1
        script: nginx-install.sh
