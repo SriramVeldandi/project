@@ -1,7 +1,7 @@
 ---
- - name: installing k8s in server22
+ - name: installing k8s
    become: true
    hosts: web
    tasks:
-     - name: installing k8s in server22
+     - name: installing k8s in master and slave servers
        script: k8s-install.sh
