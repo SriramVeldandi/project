@@ -3,7 +3,7 @@
    become: true
    hosts: web
    tasks:
-     - name: installing apache2 in server1
+     - name: installing apache2 in server22
        script: apache2-install.sh
 
        
