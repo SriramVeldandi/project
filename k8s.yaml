@@ -1,0 +1,7 @@
+---
+ - name: installing k8s in server1 and server2
+   become: true
+   hosts: localhost, web
+   tasks:
+     - name: installing k8s in server1 and server2
+       script: k8s-install.sh
