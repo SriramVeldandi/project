@@ -1,0 +1,7 @@
+---
+ - name: installing java on all servers
+   become: true
+   hosts: server22
+   tasks:
+     - name: installing apache2 in server1
+       script: docker-install.sh
