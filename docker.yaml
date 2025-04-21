@@ -1,7 +1,7 @@
 ---
  - name: installing docker
    become: true
-   hosts: web
+   hosts: web1
    tasks:
      - name: installing docker in server22
        script: docker-install.sh
